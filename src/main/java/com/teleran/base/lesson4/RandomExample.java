@@ -22,6 +22,6 @@ public class RandomExample {
         int numberTwo = random.nextInt(5, 17);
         System.out.println(numberTwo);
 
-        int numb
+
     }
 }

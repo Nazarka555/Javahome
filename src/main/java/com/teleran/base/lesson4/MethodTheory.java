@@ -37,6 +37,7 @@ public class MethodTheory {
     public static void printgreetings() {
         //7
         System.out.println("Helloy");
+
     }
 
 }
