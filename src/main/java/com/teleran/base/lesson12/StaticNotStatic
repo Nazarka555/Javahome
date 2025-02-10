@@ -1,0 +1,74 @@
+xЕсли у нас есть статический метод (print ()) в класу PrintExample:
+Если мето main , находиться в этом классе и мы из него вызываем
+на статический метод, то просто вызывем по имени print()
+
+public class PrintExample
+
+public static void main(String[] args){
+        print();
+}
+
+public static void Print(){
+
+  }
+}
+
+Если мы хотим этот метод вызвать их другого клсса , то тогда вызываем
+через имя класса, в котором этот метод находиться
+
+public class App {
+
+public static void main(String[] args){
+        PrintExample.print();
+   }
+
+}
+
+
+Если метод print() не статический то тогда , если мы вызываем его из метода
+main внутри его этого класа или из другого метода другого класа то тогла
+нужно создать объект и вызвать метод у объекта
+
+public class PrintExample {
+
+public static void main(String[] args){
+        PrintExmaple printExample = new PrintExample():
+        printExample.print();
+}
+
+public static void print(){
+
+  }
+}
+
+
+public class App {
+
+public static void main(String[] args){
+        PrintExmaple printExample = new PrintExample():
+        printExample.print();
+   }
+
+}
+
+@Test
+public void testPrint(){
+       PrintExmaple printExample = new PrintExample():
+       printExample.print();
+
+}
+
+Если не статический метод вызывается из другого не статического метода
+одного и того же класса , то тогда можно просто вызвать его по имени
+
+public class PrintExample {
+
+public void ckeckPrint(){
+    print();
+    }
+}
+
+public static void print(){
+
+  }
+}
